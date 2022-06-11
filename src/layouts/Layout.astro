@@ -1,0 +1,39 @@
+---
+import Navbar from '../components/Navbar.jsx'
+import Footer from '../components/Footer.jsx'
+export interface Props {
+	title: string;
+}
+
+const { title } = Astro.props as Props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+	<title>{title}</title>
+</head>
+<body>
+  <Navbar client:load />
+  <main class="px-8 py-20 md:px-40 md:pb-40 md:pt-20 flex flex-col gap-40">
+    <slot />
+  </main>
+  <Footer />
+</body>
+</html>
+
+<style>
+  :root {
+    --color-text: #ADADAD;
+    --color-bg: #03122F;
+  }
+
+  html {
+    font-family: 'Roboto', ui-sans-serif, system-ui !important;
+    color: var(--color-text);
+    background-color: var(--color-bg);
+  }
+</style>

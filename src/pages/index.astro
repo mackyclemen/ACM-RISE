@@ -1,0 +1,118 @@
+---
+import Layout from '../layouts/Layout.astro';
+import CardEvent from '../components/CardEvent.jsx';
+import SectionTopic from '../components/SectionTopic.jsx';
+import Title from '../components/Title.jsx';
+---
+<Layout title="ACM R15E">
+	<section class="flex flex-col justify-center items-center text-center gap-12">
+		<div class="flex flex-col gap-4">
+			<Title
+				title="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+				description={`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vulputate
+					dolor et lorem cursus, non finibus nisi fermentum. Aenean est justo,
+					varius ut ultrices et, venenatis at ligula. Nam nunc lorem, dapibus a
+					pretium id, suscipit eu nisi.`}/>
+		</div>
+		<img src="http://placehold.jp/1920x1080.png" class="rounded" alt="placeholder image">
+		<div class="relative flex overflow-x-hidden shrink-0">
+			<div class="animate-marquee whitespace-nowrap flex flex-nowrap shrink-0">
+				<span class="text-4xl mx-4"><img src="http://placehold.jp/250x80.png" class="rounded min-w-max" alt="sponsor"/></span>
+				<span class="text-4xl mx-4"><img src="http://placehold.jp/250x80.png" class="rounded min-w-max" alt="sponsor"/></span>
+				<span class="text-4xl mx-4"><img src="http://placehold.jp/250x80.png" class="rounded min-w-max" alt="sponsor"/></span>
+				<span class="text-4xl mx-4"><img src="http://placehold.jp/250x80.png" class="rounded min-w-max" alt="sponsor"/></span>
+				<span class="text-4xl mx-4"><img src="http://placehold.jp/250x80.png" class="rounded min-w-max" alt="sponsor"/></span>
+
+				<span class="text-4xl mx-4"><img src="http://placehold.jp/250x80.png" class="rounded min-w-max" alt="sponsor"/></span>
+				<span class="text-4xl mx-4"><img src="http://placehold.jp/250x80.png" class="rounded min-w-max" alt="sponsor"/></span>
+				<span class="text-4xl mx-4"><img src="http://placehold.jp/250x80.png" class="rounded min-w-max" alt="sponsor"/></span>
+				<span class="text-4xl mx-4"><img src="http://placehold.jp/250x80.png" class="rounded min-w-max" alt="sponsor"/></span>
+				<span class="text-4xl mx-4"><img src="http://placehold.jp/250x80.png" class="rounded min-w-max" alt="sponsor"/></span>
+
+			</div>
+
+			<!-- <div class="absolute top-0 animate-marquee2 whitespace-nowrap flex flex-nowrap shrink-0">
+				<span class="text-4xl mx-4"><img src="http://placehold.jp/250x80.png" class="rounded min-w-max" alt="sponsor"/></span>
+				<span class="text-4xl mx-4"><img src="http://placehold.jp/250x80.png" class="rounded min-w-max" alt="sponsor"/></span>
+				<span class="text-4xl mx-4"><img src="http://placehold.jp/250x80.png" class="rounded min-w-max" alt="sponsor"/></span>
+				<span class="text-4xl mx-4"><img src="http://placehold.jp/250x80.png" class="rounded min-w-max" alt="sponsor"/></span>
+				<span class="text-4xl mx-4"><img src="http://placehold.jp/250x80.png" class="rounded min-w-max" alt="sponsor"/></span>
+			</div> -->
+		</div>
+	</section>
+
+	<section class="flex flex-col gap-12 text-center">
+		<div class="flex flex-col gap-4">
+			<Title title="Lorem ipsum dolor sit amet, consectetur adipiscing elit" />
+		</div>
+
+		<div class="flex flex-wrap text-justify gap-8 sm:gap-0">
+			<CardEvent
+			title="Lorem"
+			description={`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vulputate
+				dolor et lorem cursus, non finibus nisi fermentum. Aenean est justo,
+				varius ut ultrices et, venenatis at ligula. Nam nunc lorem, dapibus a
+				pretium id, suscipit eu nisi.`}/>
+			<CardEvent
+			title="Lorem"
+			description={`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vulputate
+				dolor et lorem cursus, non finibus nisi fermentum. Aenean est justo,
+				varius ut ultrices et, venenatis at ligula. Nam nunc lorem, dapibus a
+				pretium id, suscipit eu nisi.`}/>
+			<CardEvent
+			title="Lorem"
+			description={`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vulputate
+				dolor et lorem cursus, non finibus nisi fermentum. Aenean est justo,
+				varius ut ultrices et, venenatis at ligula. Nam nunc lorem, dapibus a
+				pretium id, suscipit eu nisi.`}/>
+			<CardEvent
+			title="Lorem"
+			description={`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vulputate
+				dolor et lorem cursus, non finibus nisi fermentum. Aenean est justo,
+				varius ut ultrices et, venenatis at ligula. Nam nunc lorem, dapibus a
+				pretium id, suscipit eu nisi.`}/>
+			<CardEvent
+			title="Lorem"
+			description={`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vulputate
+				dolor et lorem cursus, non finibus nisi fermentum. Aenean est justo,
+				varius ut ultrices et, venenatis at ligula. Nam nunc lorem, dapibus a
+				pretium id, suscipit eu nisi.`}/>
+			<CardEvent
+			title="Lorem"
+			description={`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vulputate
+				dolor et lorem cursus, non finibus nisi fermentum. Aenean est justo,
+				varius ut ultrices et, venenatis at ligula. Nam nunc lorem, dapibus a
+				pretium id, suscipit eu nisi.`}/>
+		</div>
+	</section>
+
+	<section class="flex flex-col gap-16">
+		<SectionTopic
+			title="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+			description={`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vulputate
+			dolor et lorem cursus, non finibus nisi fermentum. Aenean est justo,
+			varius ut ultrices et, venenatis at ligula. Nam nunc lorem, dapibus a
+			pretium id, suscipit eu nisi.`}
+		/>
+		<SectionTopic
+			isReverse={true}
+			title="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+			description={`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vulputate
+			dolor et lorem cursus, non finibus nisi fermentum. Aenean est justo,
+			varius ut ultrices et, venenatis at ligula. Nam nunc lorem, dapibus a
+			pretium id, suscipit eu nisi.`}
+		/>
+		<SectionTopic
+			title="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+			description={`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vulputate
+			dolor et lorem cursus, non finibus nisi fermentum. Aenean est justo,
+			varius ut ultrices et, venenatis at ligula. Nam nunc lorem, dapibus a
+			pretium id, suscipit eu nisi.`}
+		/>
+	</section>
+
+</Layout>
+
+<style>
+
+</style>
