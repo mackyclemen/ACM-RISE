@@ -5,7 +5,7 @@ function SectionTopic({title, description, isReverse = false}) {
   return (
     <div className={`flex gap-16 flex-col text-center md:text-left ${isReverse ? 'md:flex-row-reverse' : 'md:flex-row'}`}>
       <img
-        src="http://placehold.jp/450x400.png"
+        src="https://placehold.jp/450x400.png"
         className="rounded-2xl"
         alt="Topic"
       />
