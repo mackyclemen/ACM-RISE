@@ -1,4 +1,5 @@
 ---
+import Accordion from '../components/Accordion';
 import Title from '../components/Title';
 import Layout from '../layouts/Layout.astro';
 ---
@@ -8,5 +9,44 @@ import Layout from '../layouts/Layout.astro';
         <Title title="FAQ" description={`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vulputate dolor et
             lorem cursus, non finibus nisi fermentum. Aenean est justo, varius ut ultrices et, venenatis at ligula. Nam
             nunc lorem, dapibus a pretium id, suscipit eu nisi.`} />
+
+        <div class="flex flex-col gap-4 lg:w-1/2">
+            <Accordion title="What is Lorem ipsum dolor sit amet?" client:load>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus dapibus erat, et tincidunt urna
+                tincidunt et. Vivamus sit amet lacinia nibh. Proin sodales, tortor id efficitur ornare, nulla nulla
+                convallis libero, id sollicitudin lacus odio in diam. Cras venenatis consequat enim, et blandit nunc
+                iaculis vitae.
+            </Accordion>
+            <Accordion title="What is Lorem ipsum dolor sit amet?" client:load>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus dapibus erat, et tincidunt urna
+                tincidunt et. Vivamus sit amet lacinia nibh. Proin sodales, tortor id efficitur ornare, nulla nulla
+                convallis libero, id sollicitudin lacus odio in diam. Cras venenatis consequat enim, et blandit nunc
+                iaculis vitae.
+            </Accordion>
+            <Accordion title="What is Lorem ipsum dolor sit amet?" client:load>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus dapibus erat, et tincidunt urna
+                tincidunt et. Vivamus sit amet lacinia nibh. Proin sodales, tortor id efficitur ornare, nulla nulla
+                convallis libero, id sollicitudin lacus odio in diam. Cras venenatis consequat enim, et blandit nunc
+                iaculis vitae.
+            </Accordion>
+            <Accordion title="What is Lorem ipsum dolor sit amet?" client:load>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus dapibus erat, et tincidunt urna
+                tincidunt et. Vivamus sit amet lacinia nibh. Proin sodales, tortor id efficitur ornare, nulla nulla
+                convallis libero, id sollicitudin lacus odio in diam. Cras venenatis consequat enim, et blandit nunc
+                iaculis vitae.
+            </Accordion>
+            <Accordion title="What is Lorem ipsum dolor sit amet?" client:load>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus dapibus erat, et tincidunt urna
+                tincidunt et. Vivamus sit amet lacinia nibh. Proin sodales, tortor id efficitur ornare, nulla nulla
+                convallis libero, id sollicitudin lacus odio in diam. Cras venenatis consequat enim, et blandit nunc
+                iaculis vitae.
+            </Accordion>
+            <Accordion title="What is Lorem ipsum dolor sit amet?" client:load>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus dapibus erat, et tincidunt urna
+                tincidunt et. Vivamus sit amet lacinia nibh. Proin sodales, tortor id efficitur ornare, nulla nulla
+                convallis libero, id sollicitudin lacus odio in diam. Cras venenatis consequat enim, et blandit nunc
+                iaculis vitae.
+            </Accordion>
+        </div>
     </section>
 </Layout>
