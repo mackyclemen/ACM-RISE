@@ -1,5 +1,7 @@
 ---
 import Title from '../components/Title';
+import Carousel from '../components/Carousel';
+import CardCommittee from '../components/CardCommittee';
 import Layout from '../layouts/Layout.astro';
 ---
 
@@ -8,5 +10,25 @@ import Layout from '../layouts/Layout.astro';
         <Title title="About Us" description={`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vulputate
             dolor et lorem cursus, non finibus nisi fermentum. Aenean est justo, varius ut ultrices et, venenatis at
             ligula. Nam nunc lorem, dapibus a pretium id, suscipit eu nisi.`} />
+
+        <div class="w-[80vw] lg:w-1/2">
+            <Carousel client:load/>
+        </div>
+        <h3 class="text-3xl text-center font-semibold text-white">Committee</h3>
+
+        <div class="flex flex-wrap items-center justify-center gap-12 lg:w-1/2">
+            <CardCommittee imgSrc="https://placehold.jp/128x128.png" name="John Doe" description="Organizer" />
+            <CardCommittee imgSrc="https://placehold.jp/128x128.png" name="John Doe" description="Organizer" />
+            <CardCommittee imgSrc="https://placehold.jp/128x128.png" name="John Doe" description="Organizer" />
+            <CardCommittee imgSrc="https://placehold.jp/128x128.png" name="John Doe" description="Organizer" />
+            <CardCommittee imgSrc="https://placehold.jp/128x128.png" name="John Doe" description="Organizer" />
+            <CardCommittee imgSrc="https://placehold.jp/128x128.png" name="John Doe" description="Organizer" />
+            <CardCommittee imgSrc="https://placehold.jp/128x128.png" name="John Doe" description="Organizer" />
+            <CardCommittee imgSrc="https://placehold.jp/128x128.png" name="John Doe" description="Organizer" />
+            <CardCommittee imgSrc="https://placehold.jp/128x128.png" name="John Doe" description="Organizer" />
+            <CardCommittee imgSrc="https://placehold.jp/128x128.png" name="John Doe" description="Organizer" />
+            <CardCommittee imgSrc="https://placehold.jp/128x128.png" name="John Doe" description="Organizer" />
+            <CardCommittee imgSrc="https://placehold.jp/128x128.png" name="John Doe" description="Organizer" />
+        </div>
     </section>
 </Layout>
