@@ -1,7 +1,26 @@
 import React from 'react';
 import { useState } from 'react';
+import NavbarDropdown from './NavbarDropdown';
 
 function Navbar() {
+  const eventsDropdowns = [
+    { text: 'Day 0 - Design', url: '/events#day0' },
+    { text: 'Day 1 - Design', url: '/events#day1' },
+    { text: 'Day 2 - Design', url: '/events#day2' },
+    { text: 'Day 3 - Design', url: '/events#day3' },
+    { text: 'Day 4 - Design', url: '/events#day4' },
+    { text: 'Day 5 - Design', url: '/events#day5' },
+    { text: 'Day 6 - Design', url: '/events#day6' },
+  ];
+
+  const links = [
+    { text: 'Home', url: '/' },
+    { text: 'Events', url: '/events', dropdowns: eventsDropdowns },
+    { text: 'FAQ', url: '/faq' },
+    { text: 'Partners', url: '/partners' },
+    { text: 'About Us', url: '/about' },
+  ];
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isEventDropdownOpen, setIsEventDropdownOpen] = useState(false);
 
@@ -74,124 +93,26 @@ function Navbar() {
             <div className="hidden sm:block">
               <div className="flex space-x-4">
                 {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" --> */}
-                <a
-                  href="/"
-                  className="text-gray-300 hover:text-white px-3 py-2 rounded-md font-medium"
-                >
-                  Home
-                </a>
-
-                {/* <a
-                  href="#"
-                  className="text-gray-300 hover:text-white px-3 py-2 rounded-md font-medium"
-                >
-                  Events
-                </a> */}
-
-                <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                  {/* <!-- Events --> */}
-                  <div className="ml-3 relative"
-                    onMouseEnter={eventOnHoverEnter}
-                    onMouseLeave={eventOnHoverLeave}>
-                    <a
-                      href="#"
-                      className="text-gray-300 hover:text-white px-3 py-2 rounded-md font-medium"
-                    >
-                      Events
-                    </a>
-
-                    {/* Event Dropdown */}
-                    <div
-                      className={`${isEventDropdownOpen ? 'block' : 'hidden'} origin-top-right absolute left-0 mt-1 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none`}
-                      tabIndex="-1"
-                    >
+                {links.map((link) => (
+                  <React.Fragment key={link.url}>
+                    {link.dropdowns && (
+                      <NavbarDropdown
+                        link={link}
+                        eventOnHoverEnter={eventOnHoverEnter}
+                        eventOnHoverLeave={eventOnHoverLeave}
+                        isEventDropdownOpen={isEventDropdownOpen}
+                      />
+                    )}
+                    {!link.dropdowns && (
                       <a
-                        href="#"
-                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200"
-                        role="menuitem"
-                        tabIndex="-1"
-                        id="user-menu-item-0"
+                        href={link.url}
+                        className="text-gray-300 hover:text-white px-3 py-2 rounded-md font-medium"
                       >
-                        Day 0 - Design
+                        {link.text}
                       </a>
-                      <a
-                        href="#"
-                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200"
-                        role="menuitem"
-                        tabIndex="-1"
-                        id="user-menu-item-1"
-                      >
-                        Day 1 - Design
-                      </a>
-                      <a
-                        href="#"
-                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200"
-                        role="menuitem"
-                        tabIndex="-1"
-                        id="user-menu-item-2"
-                      >
-                        Day 2 - Design
-                      </a>
-                      <a
-                        href="#"
-                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200"
-                        role="menuitem"
-                        tabIndex="-1"
-                        id="user-menu-item-3"
-                      >
-                        Day 3 - Design
-                      </a>
-                      <a
-                        href="#"
-                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200"
-                        role="menuitem"
-                        tabIndex="-1"
-                        id="user-menu-item-4"
-                      >
-                        Day 4 - Design
-                      </a>
-                      <a
-                        href="#"
-                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200"
-                        role="menuitem"
-                        tabIndex="-1"
-                        id="user-menu-item-5"
-                      >
-                        Day 5 - Design
-                      </a>
-                      <a
-                        href="#"
-                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200"
-                        role="menuitem"
-                        tabIndex="-1"
-                        id="user-menu-item-6"
-                      >
-                        Day 6 - Design
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <a
-                  href="#"
-                  className="text-gray-300 hover:text-white px-3 py-2 rounded-md font-medium"
-                >
-                  FAQ
-                </a>
-
-                <a
-                  href="#"
-                  className="text-gray-300 hover:text-white px-3 py-2 rounded-md font-medium"
-                >
-                  Partners
-                </a>
-
-                <a
-                  href="#"
-                  className="text-gray-300 hover:text-white px-3 py-2 rounded-md font-medium"
-                >
-                  About Us
-                </a>
+                    )}
+                  </React.Fragment>
+                ))}
               </div>
             </div>
             <button
