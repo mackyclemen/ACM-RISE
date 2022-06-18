@@ -9,6 +9,11 @@ module.exports = {
 
 				riseDarkGold: '#956D2C',
 				riseLightGold: '#DACDBA',
+
+				sponsorGold: '#FCF3BD',
+				sponsorSilver: '#FFFFFF',
+				sponsorBronze: '#E97E00',
+				sponsorPartners: '#266AEE',
 			},
 			fontFamily: {
 				body: ['Roboto', 'sans-serif'],
