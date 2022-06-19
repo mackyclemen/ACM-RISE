@@ -5,7 +5,7 @@ import Layout from '../layouts/Layout.astro';
 
 const events = [
     {
-        title: 'Day 0', dateText: 'June 01', eventLists: [
+        title: 'Day 0', id: 'day0', dateText: 'June 01', eventLists: [
             `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus
           dapibus erat, et tincidunt urna tincidunt et. Vivamus sit amet lacinia
           nibh. Proin sodales, tortor id efficitur ornare, nulla nulla convallis
@@ -17,7 +17,7 @@ const events = [
         ]
     },
     {
-        title: 'Day 1', dateText: 'June 02', eventLists: [
+        title: 'Day 1', id: 'day1', dateText: 'June 02', eventLists: [
             `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus
           dapibus erat, et tincidunt urna tincidunt et. Vivamus sit amet lacinia
           nibh. Proin sodales, tortor id efficitur ornare, nulla nulla convallis
@@ -29,7 +29,7 @@ const events = [
         ]
     },
     {
-        title: 'Day 2', dateText: 'June 03', eventLists: [
+        title: 'Day 2', id: 'day2', dateText: 'June 03', eventLists: [
             `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus
           dapibus erat, et tincidunt urna tincidunt et. Vivamus sit amet lacinia
           nibh. Proin sodales, tortor id efficitur ornare, nulla nulla convallis
@@ -41,7 +41,7 @@ const events = [
         ]
     },
     {
-        title: 'Day 3', dateText: 'June 04', eventLists: [
+        title: 'Day 3', id: 'day3', dateText: 'June 04', eventLists: [
             `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus
           dapibus erat, et tincidunt urna tincidunt et. Vivamus sit amet lacinia
           nibh. Proin sodales, tortor id efficitur ornare, nulla nulla convallis
@@ -53,7 +53,7 @@ const events = [
         ]
     },
     {
-        title: 'Day 4', dateText: 'June 05', eventLists: [
+        title: 'Day 4', id: 'day4', dateText: 'June 05', eventLists: [
             `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus
           dapibus erat, et tincidunt urna tincidunt et. Vivamus sit amet lacinia
           nibh. Proin sodales, tortor id efficitur ornare, nulla nulla convallis
@@ -65,7 +65,7 @@ const events = [
         ]
     },
     {
-        title: 'Day 5', dateText: 'June 06', eventLists: [
+        title: 'Day 5', id: 'day5', dateText: 'June 06', eventLists: [
             `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus
           dapibus erat, et tincidunt urna tincidunt et. Vivamus sit amet lacinia
           nibh. Proin sodales, tortor id efficitur ornare, nulla nulla convallis
@@ -77,7 +77,7 @@ const events = [
         ]
     },
     {
-        title: 'Day 6', dateText: 'June 07', eventLists: [
+        title: 'Day 6', id: 'day6', dateText: 'June 07', eventLists: [
             `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus
           dapibus erat, et tincidunt urna tincidunt et. Vivamus sit amet lacinia
           nibh. Proin sodales, tortor id efficitur ornare, nulla nulla convallis
@@ -99,7 +99,7 @@ const events = [
             Nam nunc lorem, dapibus a pretium id, suscipit eu nisi.`} />
         <div class="lg:w-2/3">
             { events.map((event, ind) =>
-            <CardEvent title={event.title} dateText={event.dateText} eventLists={event.eventLists} isLast={(events.length - 1) === ind} />) }
+            <CardEvent title={event.title} id={event.id} dateText={event.dateText} eventLists={event.eventLists} isLast={(events.length - 1) === ind} />) }
         </div>
     </section>
 </Layout>
