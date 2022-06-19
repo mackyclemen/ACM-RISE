@@ -19,8 +19,7 @@
   cursor: pointer;
   color: #c0a984;
   padding: 0.5em 1.5em;
-  /* border: solid 1px #ccc; */
-  /* border-radius: 1.5em; */
+  border-radius: 0.25rem;
   display: flex;
   justify-content: space-between;
   align-items: center;

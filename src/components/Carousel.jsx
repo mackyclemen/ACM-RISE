@@ -111,7 +111,7 @@ const Carousel = () => {
               >
                 <a
                   href={resource.link}
-                  className="h-full w-full aspect-square block bg-origin-padding bg-left-top bg-cover bg-no-repeat z-0"
+                  className="h-full w-full aspect-square block bg-origin-padding bg-left-top bg-cover bg-no-repeat z-0 rounded"
                   style={{ backgroundImage: `url(${resource.imageUrl || ''})` }}
                 >
                   <img
