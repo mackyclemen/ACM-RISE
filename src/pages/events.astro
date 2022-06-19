@@ -1,6 +1,95 @@
 ---
+import CardEvent from '../components/CardEvent';
 import Title from '../components/Title';
 import Layout from '../layouts/Layout.astro';
+
+const events = [
+    {
+        title: 'Day 0', dateText: 'June 01', eventLists: [
+            `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus
+          dapibus erat, et tincidunt urna tincidunt et. Vivamus sit amet lacinia
+          nibh. Proin sodales, tortor id efficitur ornare, nulla nulla convallis
+          libero, id sollicitudin lacus odio in diam.`,
+            `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus
+          dapibus erat, et tincidunt urna tincidunt et. Vivamus sit amet lacinia
+          nibh. Proin sodales, tortor id efficitur ornare, nulla nulla convallis
+          libero, id sollicitudin lacus odio in diam.`,
+        ]
+    },
+    {
+        title: 'Day 1', dateText: 'June 02', eventLists: [
+            `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus
+          dapibus erat, et tincidunt urna tincidunt et. Vivamus sit amet lacinia
+          nibh. Proin sodales, tortor id efficitur ornare, nulla nulla convallis
+          libero, id sollicitudin lacus odio in diam.`,
+            `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus
+          dapibus erat, et tincidunt urna tincidunt et. Vivamus sit amet lacinia
+          nibh. Proin sodales, tortor id efficitur ornare, nulla nulla convallis
+          libero, id sollicitudin lacus odio in diam.`,
+        ]
+    },
+    {
+        title: 'Day 2', dateText: 'June 03', eventLists: [
+            `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus
+          dapibus erat, et tincidunt urna tincidunt et. Vivamus sit amet lacinia
+          nibh. Proin sodales, tortor id efficitur ornare, nulla nulla convallis
+          libero, id sollicitudin lacus odio in diam.`,
+            `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus
+          dapibus erat, et tincidunt urna tincidunt et. Vivamus sit amet lacinia
+          nibh. Proin sodales, tortor id efficitur ornare, nulla nulla convallis
+          libero, id sollicitudin lacus odio in diam.`,
+        ]
+    },
+    {
+        title: 'Day 3', dateText: 'June 04', eventLists: [
+            `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus
+          dapibus erat, et tincidunt urna tincidunt et. Vivamus sit amet lacinia
+          nibh. Proin sodales, tortor id efficitur ornare, nulla nulla convallis
+          libero, id sollicitudin lacus odio in diam.`,
+            `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus
+          dapibus erat, et tincidunt urna tincidunt et. Vivamus sit amet lacinia
+          nibh. Proin sodales, tortor id efficitur ornare, nulla nulla convallis
+          libero, id sollicitudin lacus odio in diam.`,
+        ]
+    },
+    {
+        title: 'Day 4', dateText: 'June 05', eventLists: [
+            `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus
+          dapibus erat, et tincidunt urna tincidunt et. Vivamus sit amet lacinia
+          nibh. Proin sodales, tortor id efficitur ornare, nulla nulla convallis
+          libero, id sollicitudin lacus odio in diam.`,
+            `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus
+          dapibus erat, et tincidunt urna tincidunt et. Vivamus sit amet lacinia
+          nibh. Proin sodales, tortor id efficitur ornare, nulla nulla convallis
+          libero, id sollicitudin lacus odio in diam.`,
+        ]
+    },
+    {
+        title: 'Day 5', dateText: 'June 06', eventLists: [
+            `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus
+          dapibus erat, et tincidunt urna tincidunt et. Vivamus sit amet lacinia
+          nibh. Proin sodales, tortor id efficitur ornare, nulla nulla convallis
+          libero, id sollicitudin lacus odio in diam.`,
+            `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus
+          dapibus erat, et tincidunt urna tincidunt et. Vivamus sit amet lacinia
+          nibh. Proin sodales, tortor id efficitur ornare, nulla nulla convallis
+          libero, id sollicitudin lacus odio in diam.`,
+        ]
+    },
+    {
+        title: 'Day 6', dateText: 'June 07', eventLists: [
+            `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus
+          dapibus erat, et tincidunt urna tincidunt et. Vivamus sit amet lacinia
+          nibh. Proin sodales, tortor id efficitur ornare, nulla nulla convallis
+          libero, id sollicitudin lacus odio in diam.`,
+            `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus
+          dapibus erat, et tincidunt urna tincidunt et. Vivamus sit amet lacinia
+          nibh. Proin sodales, tortor id efficitur ornare, nulla nulla convallis
+          libero, id sollicitudin lacus odio in diam.`,
+        ]
+    },
+]
+
 ---
 
 <Layout title="ACM R15E - Events">
@@ -8,5 +97,9 @@ import Layout from '../layouts/Layout.astro';
         <Title title="Events" description={`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vulputate dolor
             et lorem cursus, non finibus nisi fermentum. Aenean est justo, varius ut ultrices et, venenatis at ligula.
             Nam nunc lorem, dapibus a pretium id, suscipit eu nisi.`} />
+        <div class="lg:w-2/3">
+            { events.map((event, ind) =>
+            <CardEvent title={event.title} dateText={event.dateText} eventLists={event.eventLists} isLast={(events.length - 1) === ind} />) }
+        </div>
     </section>
 </Layout>
