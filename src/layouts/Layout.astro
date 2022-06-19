@@ -82,9 +82,8 @@ const { title } = Astro.props as Props;
     animation-duration: $animationDuration;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    $colors: (#03122F,
-    #093893,
-    #956D2C);
+    // add colors here
+    $colors: (#031f55,#5a411a);
 
     @for $i from 1 through $amount {
       &:nth-child(#{$i}) {
