@@ -9,7 +9,7 @@ function CardEvent({title, description}) {
         alt="event image"
       />
       <h4 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-riseDarkGold to-riseLightGold">{title}</h4>
-      <p>{description}</p>
+      <p className='text-gray-300 text-xl'>{description}</p>
     </div>
   );
 }

@@ -12,7 +12,7 @@ function CardEvent({ title, id, dateText, eventLists, isLast }) {
       </div>
       <ul className="list-disc mt-4 mb-8 text-left">
         {eventLists.map((eventList, ind) => (
-          <li className="mb-4 text-lg" key={ind + eventList}>
+          <li className="mb-4 text-lg text-gray-300" key={ind + eventList}>
             {eventList}
           </li>
         ))}

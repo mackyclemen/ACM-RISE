@@ -5,7 +5,7 @@ function CardCommittee({ name, description, imgSrc }) {
     <div>
       <img className='rounded-full mb-4' src={imgSrc} alt="Committee Picture" />
       <h4 className='text-xl font-bold text-white'>{name}</h4>
-      <p>{description}</p>
+      <p className='text-gray-300'>{description}</p>
     </div>
   );
 }
