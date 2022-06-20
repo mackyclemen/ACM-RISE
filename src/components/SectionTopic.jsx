@@ -11,7 +11,7 @@ function SectionTopic({title, description, isReverse = false}) {
       />
       <div className="flex flex-col gap-4">
         <Title title={title} />
-        <p className="text-2xl">{description}</p>
+        <p className="text-2xl text-gray-300">{description}</p>
       </div>
     </div>
   );
