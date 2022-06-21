@@ -6,7 +6,7 @@ function Title({ title, description = '' }) {
       <h1 className="font-bold text-5xl text-transparent bg-clip-text bg-gradient-to-r from-riseDarkGold to-riseLightGold">
         {title}
       </h1>
-      {description && <p class="text-gray-300 text-xl">{description}</p>}
+      {description && <p className="text-gray-300 text-xl">{description}</p>}
     </div>
   );
 }
