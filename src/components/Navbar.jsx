@@ -115,13 +115,12 @@ function Navbar() {
                 ))}
               </div>
             </div>
-            <button
-              type="button"
+            <a
+              href="https://bit.ly/ACMR15E"
               className="bg-gradient-to-r from-riseLightGold to-riseDarkGold text-white rounded-full py-1 px-3 hidden sm:block"
-              id="user-menu-button"
             >
               Register
-            </button>
+            </a>
           </div>
         </div>
       </div>
