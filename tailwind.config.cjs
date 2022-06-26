@@ -14,9 +14,14 @@ module.exports = {
 				sponsorSilver: '#FFFFFF',
 				sponsorBronze: '#E97E00',
 				sponsorPartners: '#266AEE',
+
+				eventCircle: '#b3a579',
 			},
 			fontFamily: {
 				body: ['Roboto', 'sans-serif'],
+				vogue: ['Vogue', 'sans-serif'],
+				cannu: ['Cannu', 'sans-serif'],
+				bebasNeue: ['BebasNeue', 'sans-serif'],
 			},
 			animation: {
 				marquee: 'marquee 25s linear infinite',

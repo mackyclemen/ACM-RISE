@@ -4,13 +4,13 @@ import NavbarDropdown from './NavbarDropdown';
 
 function Navbar() {
   const eventsDropdowns = [
-    { text: 'Day 0 - Design', url: '/events#day0' },
-    { text: 'Day 1 - Design', url: '/events#day1' },
-    { text: 'Day 2 - Design', url: '/events#day2' },
-    { text: 'Day 3 - Design', url: '/events#day3' },
-    { text: 'Day 4 - Design', url: '/events#day4' },
-    { text: 'Day 5 - Design', url: '/events#day5' },
-    { text: 'Day 6 - Design', url: '/events#day6' },
+    { text: 'Day 0 - DESIGN', url: '/events#day0' },
+    { text: 'Day 1 - DEFINE', url: '/events#day1' },
+    { text: 'Day 2 - DECODE', url: '/events#day2' },
+    { text: 'Day 3 - DEFY', url: '/events#day3' },
+    { text: 'Day 4 - DECRYPT', url: '/events#day4' },
+    { text: 'Day 5 - DIVERGE', url: '/events#day5' },
+    { text: 'Day 6 - DEPLOY', url: '/events#day6' },
   ];
 
   const links = [
@@ -38,7 +38,7 @@ function Navbar() {
 
   return (
     <nav className="bg-gradient-to-r from-riseDarkBlue via-riseLightBlue to-riseDarkBlue">
-      <div className="max-w-7xl mx-auto px-4 lg:px-24">
+      <div className="max-w-7xl mx-auto px-4 2xl:px-24">
         <div className="relative flex items-center justify-between h-16">
           <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
             {/* <!-- Mobile menu button--> */}
