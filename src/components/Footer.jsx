@@ -7,21 +7,21 @@ function Footer() {
         <a href="https://www.facebook.com/feutechACM">
           <img
             className="w-9"
-            src="/images/facebook-logo.png"
+            src="images/facebook-logo.png"
             alt="facebook logo"
           />
         </a>
         <a href="https://www.instagram.com/feutechacm">
           <img
             className="w-9"
-            src="/images/instagram-logo.svg"
+            src="images/instagram-logo.svg"
             alt="instagram logo"
           />
         </a>
         <a href="https://www.twitter.com/feutechACM">
           <img
             className="w-9"
-            src="/images/twitter-logo.svg"
+            src="images/twitter-logo.svg"
             alt="twitter logo"
           />
         </a>

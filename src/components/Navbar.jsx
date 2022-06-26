@@ -4,19 +4,19 @@ import NavbarDropdown from './NavbarDropdown';
 
 function Navbar() {
   const eventsDropdowns = [
-    { text: 'Day 0 - DESIGN', url: '/events#day0' },
-    { text: 'Day 1 - DEFINE', url: '/events#day1' },
-    { text: 'Day 2 - DECODE', url: '/events#day2' },
-    { text: 'Day 3 - DEFY', url: '/events#day3' },
-    { text: 'Day 4 - DECRYPT', url: '/events#day4' },
-    { text: 'Day 5 - DIVERGE', url: '/events#day5' },
-    { text: 'Day 6 - DEPLOY', url: '/events#day6' },
+    { text: 'Day 0 - DESIGN', url: 'events#day0' },
+    { text: 'Day 1 - DEFINE', url: 'events#day1' },
+    { text: 'Day 2 - DECODE', url: 'events#day2' },
+    { text: 'Day 3 - DEFY', url: 'events#day3' },
+    { text: 'Day 4 - DECRYPT', url: 'events#day4' },
+    { text: 'Day 5 - DIVERGE', url: 'events#day5' },
+    { text: 'Day 6 - DEPLOY', url: 'events#day6' },
   ];
 
   const links = [
-    { text: 'Home', url: '/' },
-    { text: 'Events', url: '/events', dropdowns: eventsDropdowns },
-    { text: 'FAQ', url: '/faq' },
+    { text: 'Home', url: '/r15e/' },
+    { text: 'Events', url: 'events', dropdowns: eventsDropdowns },
+    { text: 'FAQ', url: 'faq' },
     // { text: 'Partners', url: '/partners' },
     // { text: 'About Us', url: '/about' },
   ];
@@ -85,7 +85,7 @@ function Navbar() {
               <a href="/">
                 <img
                   className="block h-8 w-auto md:pl-6"
-                  src="/images/fit-acm.png"
+                  src="images/fit-acm.png"
                   alt="acm fit logo"
                 />
               </a>
