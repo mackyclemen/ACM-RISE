@@ -5,14 +5,29 @@ import SectionTopic from '../components/SectionTopic.jsx';
 import Title from '../components/Title.jsx';
 ---
 <Layout title="ACM R15E">
-	<section class="flex flex-col justify-center items-center text-center gap-12">
-		<Title
-			title="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-			description={`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vulputate
-				dolor et lorem cursus, non finibus nisi fermentum. Aenean est justo,
-				varius ut ultrices et, venenatis at ligula. Nam nunc lorem, dapibus a
-				pretium id, suscipit eu nisi.`}/>
-		<img src="https://placehold.jp/1920x1080.png" class="rounded" alt="placeholder image">
+	<section class="flex flex-col justify-center items-center text-center gap-8">
+		<div>
+			<h1 class="text-8xl gold-text">R15E</h1>
+			<span class="text-4xl gold-text">A Computer Science Convention</span>
+		</div>
+		<div class="w-[450px] h-[315px] overflow-hidden">
+			<img class="scale-[1.4]" src="/images/hero-logo.png" alt="hero logo">
+		</div>
+		<span class="text-2xl gold-text italic w-full">Forging Changemakers in the Computing Field</span>
+		<div class="flex gap-12">
+			<a
+              href="https://bit.ly/ACMR15E"
+              class="bg-gradient-to-r from-riseLightGold to-riseDarkGold text-white rounded-xl py-1 px-8 hidden sm:block"
+            >
+              Register Now
+            </a>
+			<a
+              href="/events"
+              class="border-2 border-riseLightGold text-white rounded-xl py-1 px-8 hidden sm:block hover:bg-gradient-to-r hover:from-riseLightGold hover:to-riseDarkGold"
+            >
+				June 27 -  July 02
+            </a>
+		</div>
 		<div class="relative flex overflow-x-hidden shrink-0">
 			<div class="animate-marquee whitespace-nowrap flex flex-nowrap shrink-0">
 				<span class="text-4xl mx-4"><img src="https://placehold.jp/250x80.png" class="rounded min-w-max" alt="sponsor"/></span>

@@ -4,7 +4,7 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
-				riseDarkBlue: '#03122F',
+				riseDarkBlue: '#05122E',
 				riseLightBlue: '#093893',
 
 				riseDarkGold: '#956D2C',
