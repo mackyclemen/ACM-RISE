@@ -2,21 +2,21 @@ import React from 'react';
 import { useState } from 'react';
 import NavbarDropdown from './NavbarDropdown';
 
-function Navbar() {
+function Navbar({baseUrl}) {
   const eventsDropdowns = [
-    { text: 'Day 0 - DESIGN', url: 'events#day0' },
-    { text: 'Day 1 - DEFINE', url: 'events#day1' },
-    { text: 'Day 2 - DECODE', url: 'events#day2' },
-    { text: 'Day 3 - DEFY', url: 'events#day3' },
-    { text: 'Day 4 - DECRYPT', url: 'events#day4' },
-    { text: 'Day 5 - DIVERGE', url: 'events#day5' },
-    { text: 'Day 6 - DEPLOY', url: 'events#day6' },
+    { text: 'Day 0 - DESIGN', url: `${baseUrl}events#day0` },
+    { text: 'Day 1 - DEFINE', url: `${baseUrl}events#day1` },
+    { text: 'Day 2 - DECODE', url: `${baseUrl}events#day2` },
+    { text: 'Day 3 - DEFY', url: `${baseUrl}events#day3` },
+    { text: 'Day 4 - DECRYPT', url: `${baseUrl}events#day4` },
+    { text: 'Day 5 - DIVERGE', url: `${baseUrl}events#day5` },
+    { text: 'Day 6 - DEPLOY', url: `${baseUrl}events#day6` },
   ];
 
   const links = [
-    { text: 'Home', url: '/r15e/' },
-    { text: 'Events', url: 'events', dropdowns: eventsDropdowns },
-    { text: 'FAQ', url: 'faq' },
+    { text: 'Home', url: baseUrl },
+    { text: 'Events', url: `${baseUrl}events`, dropdowns: eventsDropdowns },
+    { text: 'FAQ', url: `${baseUrl}faq` },
     // { text: 'Partners', url: '/partners' },
     // { text: 'About Us', url: '/about' },
   ];
@@ -84,9 +84,14 @@ function Navbar() {
             <div className="flex-shrink-0 flex items-center">
               <a href="/">
                 <img
-                  className="block h-8 w-auto md:pl-6"
-                  src="images/fit-acm.png"
+                  className="inline-block h-8 w-auto md:pl-6"
+                  src="/r15e/images/fit-acm.png"
                   alt="acm fit logo"
+                />
+                <img
+                  className="inline-block h-8 w-auto"
+                  src="/r15e/images/rise-logo.png"
+                  alt="rise logo"
                 />
               </a>
             </div>
