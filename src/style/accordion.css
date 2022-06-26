@@ -17,7 +17,7 @@
 .accordion-title {
   font-weight: 600;
   cursor: pointer;
-  color: #c0a984;
+  color: white;
   padding: 0.5em 1.5em;
   border-radius: 0.25rem;
   display: flex;
@@ -36,7 +36,8 @@
 
 .accordion-title:hover,
 .accordion-title.open {
-  color: white;
+  /* color: #c0a984; */
+  @apply text-eventCircle;
 }
 
 .accordion-title.open::after {

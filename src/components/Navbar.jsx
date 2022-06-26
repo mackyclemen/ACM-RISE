@@ -17,8 +17,8 @@ function Navbar() {
     { text: 'Home', url: '/' },
     { text: 'Events', url: '/events', dropdowns: eventsDropdowns },
     { text: 'FAQ', url: '/faq' },
-    { text: 'Partners', url: '/partners' },
-    { text: 'About Us', url: '/about' },
+    // { text: 'Partners', url: '/partners' },
+    // { text: 'About Us', url: '/about' },
   ];
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);

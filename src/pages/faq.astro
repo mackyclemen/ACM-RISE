@@ -6,46 +6,34 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout title="ACM R15E - FAQ">
     <section class="flex flex-col justify-center items-center text-center gap-12">
-        <Title title="FAQ" description={`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vulputate dolor et
-            lorem cursus, non finibus nisi fermentum. Aenean est justo, varius ut ultrices et, venenatis at ligula. Nam
-            nunc lorem, dapibus a pretium id, suscipit eu nisi.`} />
+        <Title title="FAQ" description={``} />
+        <p class="text-gray-300 text-xl">Got a question? Here are some commonly asked questions about our event. If your
+            question isn’t answered here, feel free to <a class="underline" href="www.facebook.com/feutechACM">contact
+                us on our Facebook page</a>, and we’ll help sort things up!</p>
 
-        <div class="flex flex-col gap-4 2xl:w-1/2">
-            <Accordion title="What is Lorem ipsum dolor sit amet?" client:load>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus dapibus erat, et tincidunt urna
-                tincidunt et. Vivamus sit amet lacinia nibh. Proin sodales, tortor id efficitur ornare, nulla nulla
-                convallis libero, id sollicitudin lacus odio in diam. Cras venenatis consequat enim, et blandit nunc
-                iaculis vitae.
+        <div class="flex flex-col gap-4 xl:w-2/3">
+            <Accordion title="Is there a registration fee?" client:load>
+                R15E has no registration fee and anyone is free to join the activities prepared by FEU Tech ACM.
+                However, the competitions are open to college students only.
             </Accordion>
-            <Accordion title="What is Lorem ipsum dolor sit amet?" client:load>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus dapibus erat, et tincidunt urna
-                tincidunt et. Vivamus sit amet lacinia nibh. Proin sodales, tortor id efficitur ornare, nulla nulla
-                convallis libero, id sollicitudin lacus odio in diam. Cras venenatis consequat enim, et blandit nunc
-                iaculis vitae.
+            <Accordion title="Do I need to register separately for each day?" client:load>
+                You don’t need to register for each day that you wish to participate in. We only have one registration
+                form and you only need to answer it once if you are participating in all of the webinar or workshops. If
+                you are interested in participating in the competitions, you need to answer the registration form again
+                and fill up your team information.
             </Accordion>
-            <Accordion title="What is Lorem ipsum dolor sit amet?" client:load>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus dapibus erat, et tincidunt urna
-                tincidunt et. Vivamus sit amet lacinia nibh. Proin sodales, tortor id efficitur ornare, nulla nulla
-                convallis libero, id sollicitudin lacus odio in diam. Cras venenatis consequat enim, et blandit nunc
-                iaculis vitae.
+            <Accordion title="Will e-certificates be provided at the end of the event?" client:load>
+                Yes. As long as the participants finish the program and answer the evaluation form given at the end,
+                they will be receiving an e-certificate.
             </Accordion>
-            <Accordion title="What is Lorem ipsum dolor sit amet?" client:load>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus dapibus erat, et tincidunt urna
-                tincidunt et. Vivamus sit amet lacinia nibh. Proin sodales, tortor id efficitur ornare, nulla nulla
-                convallis libero, id sollicitudin lacus odio in diam. Cras venenatis consequat enim, et blandit nunc
-                iaculis vitae.
+            <Accordion title="What if I have not received a confirmation email for my registration?" client:load>
+                If you did not receive any kind of confirmation regarding your registration, please message our Facebook
+                page or contact any officer you know that can raise your concern.
             </Accordion>
-            <Accordion title="What is Lorem ipsum dolor sit amet?" client:load>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus dapibus erat, et tincidunt urna
-                tincidunt et. Vivamus sit amet lacinia nibh. Proin sodales, tortor id efficitur ornare, nulla nulla
-                convallis libero, id sollicitudin lacus odio in diam. Cras venenatis consequat enim, et blandit nunc
-                iaculis vitae.
-            </Accordion>
-            <Accordion title="What is Lorem ipsum dolor sit amet?" client:load>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus dapibus erat, et tincidunt urna
-                tincidunt et. Vivamus sit amet lacinia nibh. Proin sodales, tortor id efficitur ornare, nulla nulla
-                convallis libero, id sollicitudin lacus odio in diam. Cras venenatis consequat enim, et blandit nunc
-                iaculis vitae.
+            <Accordion title="What are the prizes that await me?" client:load>
+                R15E has numerous prizes available. Participants may win cash prizes and sponsorship merchandises if
+                they win in a competition. However, participants may also win these prizes just by attending our
+                webinars or workshops, or joining in our social media giveaway.
             </Accordion>
         </div>
     </section>
