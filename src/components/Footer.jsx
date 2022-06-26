@@ -14,14 +14,14 @@ function Footer() {
         <a href="https://www.instagram.com/feutechacm">
           <img
             className="w-9"
-            src="/r15e/images/instagram-logo.svg"
+            src="/r15e/images/instagram-logo.png"
             alt="instagram logo"
           />
         </a>
         <a href="https://www.twitter.com/feutechACM">
           <img
             className="w-9"
-            src="/r15e/images/twitter-logo.svg"
+            src="/r15e/images/twitter-logo.png"
             alt="twitter logo"
           />
         </a>
