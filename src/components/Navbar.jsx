@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import NavbarDropdown from './NavbarDropdown';
 
-function Navbar({baseUrl}) {
+function Navbar({ baseUrl }) {
   const eventsDropdowns = [
     { text: 'Day 0 - DESIGN', url: `${baseUrl}events#day0` },
     { text: 'Day 1 - DEFINE', url: `${baseUrl}events#day1` },
@@ -17,8 +17,8 @@ function Navbar({baseUrl}) {
     { text: 'Home', url: baseUrl },
     { text: 'Events', url: `${baseUrl}events`, dropdowns: eventsDropdowns },
     { text: 'FAQ', url: `${baseUrl}faq` },
-    // { text: 'Partners', url: '/partners' },
-    // { text: 'About Us', url: '/about' },
+    { text: 'Partners', url: `${baseUrl}partners` },
+    { text: 'About Us', url: `${baseUrl}about` },
   ];
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -84,12 +84,12 @@ function Navbar({baseUrl}) {
             <div className="flex-shrink-0 flex items-center">
               <a href="/">
                 <img
-                  className="inline-block h-8 w-auto md:pl-6"
+                  className="inline-block h-8 w-24 object-contain md:pl-6"
                   src="/r15e/images/fit-acm.png"
                   alt="acm fit logo"
                 />
                 <img
-                  className="inline-block h-8 w-auto"
+                  className="inline-block h-8 w-18 object-contain"
                   src="/r15e/images/rise-logo.png"
                   alt="rise logo"
                 />
