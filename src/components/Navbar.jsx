@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import NavbarDropdown from './NavbarDropdown';
 
-function Navbar({baseUrl}) {
+function Navbar({ baseUrl }) {
   const eventsDropdowns = [
     { text: 'Day 0 - DESIGN', url: `${baseUrl}events#day0` },
     { text: 'Day 1 - DEFINE', url: `${baseUrl}events#day1` },
@@ -82,7 +82,7 @@ function Navbar({baseUrl}) {
           </div>
           <div className="flex-1 flex items-center md:justify-between gap-40">
             <div className="flex-shrink-0 flex items-center">
-              <a href="/">
+              <a href={links[0].url}>
                 <img
                   className="inline-block h-8 w-auto md:pl-6"
                   src="/r15e/images/fit-acm.png"
@@ -136,40 +136,15 @@ function Navbar({baseUrl}) {
         id="mobile-menu"
       >
         <div className="px-2 pt-2 pb-3 space-y-1 text-center">
-          <a
-            href="/"
-            className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-          >
-            Home
-          </a>
-
-          <a
-            href="#"
-            className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-          >
-            Events
-          </a>
-
-          <a
-            href="#"
-            className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-          >
-            FAQ
-          </a>
-
-          <a
-            href="#"
-            className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-          >
-            Partners
-          </a>
-
-          <a
-            href="#"
-            className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-          >
-            About Us
-          </a>
+          {links.map((link) => (
+            <a
+              key={link.url}
+              href={link.url}
+              className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+            >
+              {link.text}
+            </a>
+          ))}
         </div>
       </div>
     </nav>
