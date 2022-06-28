@@ -2,51 +2,51 @@
     "resources": [
       {
         "title": "ACM Happy Hour 1T",
-        "imageUrl": "/images/about/carousel/happyhour.jpg"
+        "imageUrl": "/r15e/images/about/carousel/happyhour.jpg"
       },
       {
         "title": "ACM Happy Hour 2T",
-        "imageUrl": "/images/about/carousel/phastosmania.png"
+        "imageUrl": "/r15e/images/about/carousel/phastosmania.png"
       },
       {
         "title": "ACM Happy Hour 2T",
-        "imageUrl": "/images/about/carousel/17.png"
+        "imageUrl": "/r15e/images/about/carousel/17.png"
       },
       {
         "title": "ACM FUSE",
-        "imageUrl": "/images/about/carousel/acm-fuse-06h35m10s318.png"
+        "imageUrl": "/r15e/images/about/carousel/acm-fuse-06h35m10s318.png"
       },
       {
         "title": "ACM FUSE",
-        "imageUrl": "/images/about/carousel/acm-fuse-06h35m58s777.png"
+        "imageUrl": "/r15e/images/about/carousel/acm-fuse-06h35m58s777.png"
       },
       {
         "title": "Camp ComSci",
-        "imageUrl": "/images/about/carousel/camp-comsci-06h17m21s528.png"
+        "imageUrl": "/r15e/images/about/carousel/camp-comsci-06h17m21s528.png"
       },
       {
         "title": "Camp ComSci",
-        "imageUrl": "/images/about/carousel/camp-comsci-06h18m13s244.png"
+        "imageUrl": "/r15e/images/about/carousel/camp-comsci-06h18m13s244.png"
       },
       {
         "title": "Pet Society",
-        "imageUrl": "/images/about/carousel/Pet-Society_3.jpg"
+        "imageUrl": "/r15e/images/about/carousel/Pet-Society_3.jpg"
       },
       {
         "title": "Pet Society",
-        "imageUrl": "/images/about/carousel/Pet-Society_4.jpg"
+        "imageUrl": "/r15e/images/about/carousel/Pet-Society_4.jpg"
       },
       {
         "title": "White Hackfest",
-        "imageUrl": "/images/about/carousel/whf.png"
+        "imageUrl": "/r15e/images/about/carousel/whf.png"
       },
       {
         "title": "Clash of Coders: JTCP",
-        "imageUrl": "/images/about/carousel/clash.png"
+        "imageUrl": "/r15e/images/about/carousel/clash.png"
       },
       {
         "title": "Into The Code: F++ 3.0",
-        "imageUrl": "/images/about/carousel/intothecode.png"
+        "imageUrl": "/r15e/images/about/carousel/intothecode.png"
       }
     ]
   }
