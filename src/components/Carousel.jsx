@@ -107,7 +107,7 @@ const Carousel = () => {
             return (
               <div
                 key={index}
-                className="carousel-item text-center relative w-64 h-64 snap-start"
+                className="carousel-item text-center relative bg-contain w-64 h-64 snap-start"
               >
                 <a
                   href={resource.link}
@@ -117,7 +117,7 @@ const Carousel = () => {
                   <img
                     src={resource.imageUrl || ''}
                     alt={resource.title}
-                    className="w-full aspect-square hidden"
+                    className="w-full aspect-square object-cover hidden"
                   />
                 </a>
                 <a

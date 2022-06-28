@@ -3,6 +3,39 @@ import Layout from '../layouts/Layout.astro';
 import CardCalendar from '../components/CardCalendar.jsx';
 import SectionTopic from '../components/SectionTopic.jsx';
 import Title from '../components/Title.jsx';
+
+const partners = [
+    { imageUrl: '/images/partners/gold/msi.png', name: 'MSI Philippines' },
+    { imageUrl: '/images/partners/gold/fujitsu.png', name: 'Fujitsu Philippines Global Delivery Center  (WeServ Systems International, Inc.)' },
+
+    { imageUrl: '/images/partners/silver/unionbank.png', name: 'UnionBank of the Philippines' },
+
+    { imageUrl: '/images/partners/bronze/capgemini.png', name: 'Capgemini' },
+    { imageUrl: '/images/partners/bronze/collabera.jpg', name: 'Collabera Philippines' },
+
+    { name: 'Carthal Manila', imageUrl: '/images/partners/media/carthal.png' },
+    { name: 'SparkUp', imageUrl: '/images/partners/media/sparkup.png' },
+    { name: 'Gadgets Magazine', imageUrl: '/images/partners/media/gadgetsmag.png' },
+    { name: 'Blog PH', imageUrl: '/images/partners/media/blogph.png' },
+    { name: 'Explained PH', imageUrl: '/images/partners/media/explainedph.jpg' },
+    { name: 'BLB Live', imageUrl: '/images/partners/media/blblive.png' },
+    { name: 'IKOT.PH', imageUrl: '/images/partners/media/ikotlogo.png' },
+    { name: 'Diyaryo Milenyo - Digital News', imageUrl: '/images/partners/media/dyaryomilenyo.png' },
+    { name: 'Twist TV', imageUrl: '/images/partners/media/twisttv.png' },
+    { name: 'You.PH', imageUrl: '/images/partners/media/you.jpg' },
+    { name: 'Monster RX93.1', imageUrl: '/images/partners/media/monster.png' },
+
+    { name: 'Academic Consortium of Computer Science Students', imageUrl: '/images/partners/partner_major/access.png' },
+    { name: 'FEU Diliman Junior Marketing Association', imageUrl: '/images/partners/partner_major/feud_jma.png' },
+    { name: 'IECEP CTU - Electronics Engineering', imageUrl: '/images/partners/partner_major/iecep_ctu.png' },
+    { name: 'Online SDG Youth Action Forum', imageUrl: '/images/partners/partner_major/osyaf.png' },
+    { name: 'Honor Society of Mapúa', imageUrl: '/images/partners/partner_major/honsoc_mapua.png' },
+
+    { name: 'FEU Tech Tribe of EMC and Multimedia Arts Students', imageUrl: '/images/partners/partner_minor/teams.png' },
+    { name: 'FEU Tech Freshmen Society', imageUrl: '/images/partners/partner_minor/fsoc.png' },
+    { name: 'FIT Tamaraws Esports Club', imageUrl: '/images/partners/partner_minor/tec.png' },
+]
+
 ---
 <Layout title="ACM R15E">
 	<section class="flex flex-col justify-center items-center text-center gap-8">
@@ -28,30 +61,11 @@ import Title from '../components/Title.jsx';
 				June 27 -  July 02
             </a>
 		</div>
-		<!-- <div class="relative flex overflow-x-hidden shrink-0">
+		<div class="relative flex overflow-x-hidden shrink-0 mt-8">
 			<div class="animate-marquee whitespace-nowrap flex flex-nowrap shrink-0">
-				<span class="text-4xl mx-4"><img src="https://placehold.jp/250x80.png" class="rounded min-w-max" alt="sponsor"/></span>
-				<span class="text-4xl mx-4"><img src="https://placehold.jp/250x80.png" class="rounded min-w-max" alt="sponsor"/></span>
-				<span class="text-4xl mx-4"><img src="https://placehold.jp/250x80.png" class="rounded min-w-max" alt="sponsor"/></span>
-				<span class="text-4xl mx-4"><img src="https://placehold.jp/250x80.png" class="rounded min-w-max" alt="sponsor"/></span>
-				<span class="text-4xl mx-4"><img src="https://placehold.jp/250x80.png" class="rounded min-w-max" alt="sponsor"/></span>
-
-				<span class="text-4xl mx-4"><img src="https://placehold.jp/250x80.png" class="rounded min-w-max" alt="sponsor"/></span>
-				<span class="text-4xl mx-4"><img src="https://placehold.jp/250x80.png" class="rounded min-w-max" alt="sponsor"/></span>
-				<span class="text-4xl mx-4"><img src="https://placehold.jp/250x80.png" class="rounded min-w-max" alt="sponsor"/></span>
-				<span class="text-4xl mx-4"><img src="https://placehold.jp/250x80.png" class="rounded min-w-max" alt="sponsor"/></span>
-				<span class="text-4xl mx-4"><img src="https://placehold.jp/250x80.png" class="rounded min-w-max" alt="sponsor"/></span>
-
+				{partners.map((partner) => <span class="text-4xl mx-4"><img src={partner.imageUrl} class="rounded min-w-max h-16" alt={partner.name} /></span>)}
 			</div>
-
-			<div class="absolute top-0 animate-marquee2 whitespace-nowrap flex flex-nowrap shrink-0">
-				<span class="text-4xl mx-4"><img src="https://placehold.jp/250x80.png" class="rounded min-w-max" alt="sponsor"/></span>
-				<span class="text-4xl mx-4"><img src="https://placehold.jp/250x80.png" class="rounded min-w-max" alt="sponsor"/></span>
-				<span class="text-4xl mx-4"><img src="https://placehold.jp/250x80.png" class="rounded min-w-max" alt="sponsor"/></span>
-				<span class="text-4xl mx-4"><img src="https://placehold.jp/250x80.png" class="rounded min-w-max" alt="sponsor"/></span>
-				<span class="text-4xl mx-4"><img src="https://placehold.jp/250x80.png" class="rounded min-w-max" alt="sponsor"/></span>
-			</div>
-		</div> -->
+		</div>
 		<p class="text-gray-300 text-xl text-center max-w-5xl mt-4"><b>R15E: A Computer Science Convention</b> is a week-long virtual event from June 27 - July 2, 2022 in celebration of Far Eastern University - Institute of Technology Association for Computing Machinery (FEU Tech ACM) Student Chapter’s fifteenth year anniversary, consisting of various activities and competitions that explore topics and enhance the skills needed in the computing industry.</p>
 	</section>
 

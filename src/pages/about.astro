@@ -7,13 +7,29 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout title="ACM R15E - About Us">
     <section class="flex flex-col justify-center items-center text-center gap-12">
-        <Title title="About Us" description={`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vulputate
-            dolor et lorem cursus, non finibus nisi fermentum. Aenean est justo, varius ut ultrices et, venenatis at
-            ligula. Nam nunc lorem, dapibus a pretium id, suscipit eu nisi.`} />
+        <Title title="About Us" description={``} />
+
+        <p class="text-xl text-white font-light">
+        <strong>The FEU Institute of Technology Association for Computing Machinery
+        Student Chapter</strong> (FEU Tech ACM) is the second accredited Philippine student chapter of ACM, the world’s
+        largest computing society. As a recognized student organization, it acts as the mother organization of the
+        institution’s Computer Science Department, with the aim of propelling the members of the student community
+        to be globally competitive individuals, adept computing professionals, and catalysts of societal change
+        through its events and activities targeted at holistic development, and technical excellence.<br /><br />
+        
+        FEU Tech ACM, now on its 15th year as a Recognized Student Organization, will be conducting R15E: A Computer Science
+        Convention in celebration of their milestone. It is a week-long convention consisting of a series of
+        activities that aim to widen the youth’s knowledge about computing, discuss the various fields that students
+        can explore, and tackle recent trends in the industry. This event, having a theme of “<strong>Forging Changemakers
+        in the Computing Field</strong>”, will happen on <strong>June 27 to July 2, 2022</strong>, offering webinars, workshops, competitions,
+        panel discussions, and virtual booths exclusive for all registered participants.
+        </p>
 
         <div class="w-[80vw] 2xl:w-3/5">
             <Carousel client:load/>
         </div>
+
+        { /*
         <h3 class="text-3xl text-center font-semibold text-white">Committee</h3>
 
         <div class="flex flex-wrap items-center justify-center gap-12 2xl:max-w-2xl">
@@ -30,5 +46,6 @@ import Layout from '../layouts/Layout.astro';
             <CardCommittee imgSrc="https://placehold.jp/128x128.png" name="John Doe" description="Organizer" />
             <CardCommittee imgSrc="https://placehold.jp/128x128.png" name="John Doe" description="Organizer" />
         </div>
+        */ }
     </section>
 </Layout>
