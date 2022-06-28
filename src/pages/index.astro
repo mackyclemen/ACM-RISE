@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import CardCalendar from '../components/CardCalendar.jsx';
 import SectionTopic from '../components/SectionTopic.jsx';
 import Title from '../components/Title.jsx';
+import '../style/marquee.scss';
 
 const partners = [
 	{ imageUrl: '/images/partners/gold/msi.png', name: 'MSI Philippines' },
@@ -58,9 +59,13 @@ const partners = [
 				June 27 - July 02
 			</a>
 		</div>
-		<div class="relative flex overflow-x-hidden shrink-0 mt-8">
-			<div class="animate-marquee whitespace-nowrap flex flex-nowrap shrink-0">
-				{partners.map((partner) => <span class="text-4xl mx-4"><img src={partner.imageUrl}
+		<div class="flex">
+			<div class="marquee shrink-0">
+				{partners.map((partner) => <span class="mx-4"><img src={partner.imageUrl}
+						class="rounded min-w-max h-16" alt={partner.name} /></span>)}
+			</div>
+			<div class="marquee shrink-0">
+				{partners.map((partner) => <span class="mx-4"><img src={partner.imageUrl}
 						class="rounded min-w-max h-16" alt={partner.name} /></span>)}
 			</div>
 		</div>

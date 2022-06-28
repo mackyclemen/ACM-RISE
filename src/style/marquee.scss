@@ -1,0 +1,32 @@
+:root {
+  --marquee-min-from: 75%;
+  --marquee-min-to: -25%;
+}
+
+@media (max-width: 1367px) {
+  :root {
+    --marquee-min-from: 60%;
+    --marquee-min-to: -40%;
+  }
+}
+
+.marquee {
+  height: 64px;
+  position: relative;
+  overflow: hidden;
+  min-width: 200vw;
+  animation: marqueemove 30s linear infinite;
+  display: flex;
+  justify-content: space-between;
+  transform: translateX(75%);
+}
+
+@keyframes marqueemove {
+  0% {
+    transform: translateX(var(--marquee-min-from));
+  }
+  100% {
+
+    transform: translateX(var(--marquee-min-to));
+  }
+}
