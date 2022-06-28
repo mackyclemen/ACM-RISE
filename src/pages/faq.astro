@@ -6,10 +6,15 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout title="ACM R15E - FAQ">
     <section class="flex flex-col justify-center items-center text-center gap-12">
-        <Title title="FAQ" description={``} />
-        <p class="text-gray-300 text-xl">Got a question? Here are some commonly asked questions about our event. If your
-            question isn’t answered here, feel free to <a class="underline" href="https://www.facebook.com/feutechACM">contact
-                us on our Facebook page</a>, and we’ll help sort things up!</p>
+        <Title title="FAQ">
+            <p class="text-gray-300 text-xl">
+                Got a question? Here are some commonly asked questions about our event. If
+                your question isn’t answered here, feel free to
+                    <a class="underline" href="https://www.facebook.com/feutechACM">
+                        contact us on our Facebook page
+                    </a>
+                , and we’ll help sort things up!</p>
+        </Title>
 
         <div class="flex flex-col gap-4 xl:w-2/3 2xl:mb-8">
             <Accordion title="Is there a registration fee?" client:load>

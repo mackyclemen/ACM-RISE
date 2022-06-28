@@ -49,22 +49,18 @@ const minorPartners = [
 
 <Layout title="ACM R15E - Partners">
     <section class="flex flex-col justify-center items-center text-center gap-12">
-        <Title title="Our Partners" description={`FEU Tech ACM would like to give their greatest gratitudes
-            for the event partners in R15E: A Computer Science Convention. This event would not be possible
-            without these partner companies and organizations!`} />
+        <Title title="Our Partners">
+            <p>FEU Tech ACM would like to give their greatest gratitudes
+                for the event partners in R15E: A Computer Science Convention. This event would not be possible
+                without these partner companies and organizations!</p>
+        </Title>
         <div class="flex flex-col gap-12 2xl:w-2/3">
-            <PartnersSponsor title="Gold Sponsors"
-                partners={goldSponsors} titleClass="text-sponsorGold" />
-            <PartnersSponsor title="Silver Sponsor"
-                partners={silverSponsors} titleClass="text-sponsorSilver" />
-            <PartnersSponsor title="Bronze Sponsors"
-                partners={bronzeSponsors} titleClass="text-sponsorBronze" />
-            <PartnersSponsor title="Media Partners"
-                partners={media} titleClass="text-sponsorPartners" />
-            <PartnersSponsor title="Major Partners"
-                partners={majorPartners} titleClass="text-sponsorPartners" />
-            <PartnersSponsor title="Minor Partners"
-                partners={minorPartners} titleClass="text-sponsorPartners" />
+            <PartnersSponsor title="Gold Sponsors" partners={goldSponsors} titleClass="text-sponsorGold" />
+            <PartnersSponsor title="Silver Sponsor" partners={silverSponsors} titleClass="text-sponsorSilver" />
+            <PartnersSponsor title="Bronze Sponsors" partners={bronzeSponsors} titleClass="text-sponsorBronze" />
+            <PartnersSponsor title="Media Partners" partners={media} titleClass="text-sponsorPartners" />
+            <PartnersSponsor title="Major Partners" partners={majorPartners} titleClass="text-sponsorPartners" />
+            <PartnersSponsor title="Minor Partners" partners={minorPartners} titleClass="text-sponsorPartners" />
         </div>
     </section>
 </Layout>

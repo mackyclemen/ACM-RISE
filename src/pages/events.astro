@@ -6,21 +6,17 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout title="ACM R15E - Events">
   <section class="flex flex-col justify-center items-center text-center gap-12">
-    <Title title="Events" description="" />
-    <div class="flex flex-col gap-4 2xl:w-2/3 text-gray-300 text-xl">
-      <p>The Far Eastern University - Institute of Technology Association for Computing Machinery (FEU Tech ACM) Student
-        Chapter was established in the Philippines in 2007. Now on its fifteenth year, FEU Tech ACM bigger than ever, is
-        holding a week-long event entitled, <b>R15E</b>, a Computer Science Convention, with a theme of <b>Forging
-          Changemakers in the Computing Industry.</b></p>
-      <p>The week-long event is on <b>June 27 - July 2, 2022</b> and it offers various talks and competitions focused in
-        the computing industy, all of which will be held virtually. As FEU Tech ACM celebrates its growth, the
-        organization will also be expressing its gratitude by conducting an outreach activity for a chosen beneficiary
-        by providing a website that highlights them.</p>
-    </div>
+    <Title title="Events">
+        <p>The Far Eastern University - Institute of Technology Association for Computing Machinery (FEU Tech ACM) Student
+          Chapter was established in the Philippines in 2007. Now on its fifteenth year, FEU Tech ACM bigger than ever, is
+          holding a week-long event entitled, <b>R15E</b>, a Computer Science Convention, with a theme of <b>Forging
+            Changemakers in the Computing Industry.</b></p>
+        <p>The week-long event is on <b>June 27 - July 2, 2022</b> and it offers various talks and competitions focused in
+          the computing industy, all of which will be held virtually. As FEU Tech ACM celebrates its growth, the
+          organization will also be expressing its gratitude by conducting an outreach activity for a chosen beneficiary
+          by providing a website that highlights them.</p>
+    </Title>
     <div class="2xl:w-2/3">
-      <!-- { events.map((event, ind) =>
-      <CardEvent title={event.title} id={event.id} dateText={event.dateText} eventLists={event.eventLists}
-        isLast={(events.length - 1)===ind} />) } -->
         <CardEvent title="Day 0 DESIGN" id="day0" dateText="June 23 - 29">
           <ul class="list-disc mt-4 mb-8 text-left">
             <li class="mb-4 text-lg text-gray-300"><b>DESIGN</b> is the <b>Web Development Contest and Outreach</b> activity that revolves in the creation of a website for our beneficiary <b>For Our Farmers PH, Inc.</b> The winner of the competition will have their website used by our beneficiary.</li>
