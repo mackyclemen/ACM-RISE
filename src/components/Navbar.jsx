@@ -85,12 +85,12 @@ function Navbar({ baseUrl }) {
               <a href={links[0].url}>
                 <img
                   className="inline-block h-8 w-auto md:pl-6"
-                  src="/r15e/images/fit-acm.png"
+                  src="/R15E/images/fit-acm.png"
                   alt="acm fit logo"
                 />
                 <img
                   className="inline-block h-8 w-auto"
-                  src="/r15e/images/rise-logo.png"
+                  src="/R15E/images/rise-logo.png"
                   alt="rise logo"
                 />
               </a>
