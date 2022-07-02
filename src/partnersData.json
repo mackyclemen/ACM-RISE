@@ -1,14 +1,19 @@
 {
 	"goldSponsors": [
-		{ "name": "MSI Philippines", "imageUrl": "/R15E/images/partners/gold/msi.png" },
-		{ "name": "Fujitsu Philippines Global Delivery Center  (WeServ Systems International, Inc.)", "imageUrl": "/R15E/images/partners/gold/fujitsu.png" }
+		{ "name": "Civicom Pacific ", "imageUrl": "/R15E/images/partners/gold/civicom.png" },
+		{ "name": "EY Global Delivery Services Careers", "imageUrl": "/R15E/images/partners/gold/ey.jpg" },
+		{ "name": "Fujitsu Philippines Global Delivery Center  (WeServ Systems International, Inc.)", "imageUrl": "/R15E/images/partners/gold/fujitsu.png" },
+		{ "name": "MSI Philippines", "imageUrl": "/R15E/images/partners/gold/msi.png" }
 	],
 	"silverSponsors": [
 		{ "name": "UnionBank of the Philippines", "imageUrl": "/R15E/images/partners/silver/unionbank.png" }
 	],
 	"bronzeSponsors": [
+		{ "name": "Azeus Systems Philippines ", "imageUrl": "/R15E/images/partners/bronze/azeus.png" },
 		{ "name": "Capgemini", "imageUrl": "/R15E/images/partners/bronze/capgemini.png" },
-		{ "name": "Collabera Philippines", "imageUrl": "/R15E/images/partners/bronze/collabera.jpg" }
+		{ "name": "Collabera Philippines", "imageUrl": "/R15E/images/partners/bronze/collabera.jpg" },
+		{ "name": "Edukasyon.ph", "imageUrl": "/R15E/images/partners/bronze/edukasyon.ph.jpg" },
+		{ "name": "Pineda Cybersecurity", "imageUrl": "/R15E/images/partners/bronze/pineda_cybersecurity.png" }
 	],
 	"majorPartners": [
 		{ "name": "Academic Consortium of Computer Science Students", "imageUrl": "/R15E/images/partners/partner_major/access.png" },
@@ -33,6 +38,7 @@
 		{ "name": "Diyaryo Milenyo - Digital News", "imageUrl": "/R15E/images/partners/media/dyaryomilenyo.png" },
 		{ "name": "Twist TV", "imageUrl": "/R15E/images/partners/media/twisttv.png" },
 		{ "name": "You.PH", "imageUrl": "/R15E/images/partners/media/you.jpg" },
-		{ "name": "Monster RX93.1", "imageUrl": "/R15E/images/partners/media/monster.png" }
+		{ "name": "Monster RX93.1", "imageUrl": "/R15E/images/partners/media/monster.png" },
+		{ "name": "When In Manila", "imageUrl": "/R15E/images/partners/media/WIM.png" }
 	]
 }
