@@ -2,49 +2,7 @@
 import Title from '../components/Title';
 import Layout from '../layouts/Layout.astro';
 import PartnersSponsor from '../components/PartnersSponsor.jsx';
-
-const goldSponsors = [
-    { imageUrl: '/R15E/images/partners/gold/msi.png', name: 'MSI Philippines' },
-    { imageUrl: '/R15E/images/partners/gold/fujitsu.png', name: 'Fujitsu Philippines Global Delivery Center  (WeServ Systems International, Inc.)' },
-];
-
-const silverSponsors = [
-    { imageUrl: '/R15E/images/partners/silver/unionbank.png', name: 'UnionBank of the Philippines' },
-];
-
-const bronzeSponsors = [
-    { imageUrl: '/R15E/images/partners/bronze/capgemini.png', name: 'Capgemini' },
-    { imageUrl: '/R15E/images/partners/bronze/collabera.jpg', name: 'Collabera Philippines' },
-];
-
-const media = [
-    { name: 'Carthal Manila', imageUrl: '/R15E/images/partners/media/carthal.png' },
-    { name: 'SparkUp', imageUrl: '/R15E/images/partners/media/sparkup.png' },
-    { name: 'Gadgets Magazine', imageUrl: '/R15E/images/partners/media/gadgetsmag.png' },
-    { name: 'Blog PH', imageUrl: '/R15E/images/partners/media/blogph.png' },
-    { name: 'Explained PH', imageUrl: '/R15E/images/partners/media/explainedph.jpg' },
-    { name: 'BLB Live', imageUrl: '/R15E/images/partners/media/blblive.png' },
-    { name: 'IKOT.PH', imageUrl: '/R15E/images/partners/media/ikotlogo.png' },
-    { name: 'Diyaryo Milenyo - Digital News', imageUrl: '/R15E/images/partners/media/dyaryomilenyo.png' },
-    { name: 'Twist TV', imageUrl: '/R15E/images/partners/media/twisttv.png' },
-    { name: 'You.PH', imageUrl: '/R15E/images/partners/media/you.jpg' },
-    { name: 'Monster RX93.1', imageUrl: '/R15E/images/partners/media/monster.png' },
-]
-
-const majorPartners = [
-    { name: 'Academic Consortium of Computer Science Students', imageUrl: '/R15E/images/partners/partner_major/access.png' },
-    { name: 'FEU Diliman Junior Marketing Association', imageUrl: '/R15E/images/partners/partner_major/feud_jma.png' },
-    { name: 'IECEP CTU - Electronics Engineering', imageUrl: '/R15E/images/partners/partner_major/iecep_ctu.png' },
-    { name: 'Online SDG Youth Action Forum', imageUrl: '/R15E/images/partners/partner_major/osyaf.png' },
-    { name: 'Honor Society of Mapúa', imageUrl: '/R15E/images/partners/partner_major/honsoc_mapua.png' },
-]
-
-const minorPartners = [
-    { name: 'FEU Tech Tribe of EMC and Multimedia Arts Students', imageUrl: '/R15E/images/partners/partner_minor/teams.png' },
-    { name: 'FEU Tech Freshmen Society', imageUrl: '/R15E/images/partners/partner_minor/fsoc.png' },
-    { name: 'FIT Tamaraws Esports Club', imageUrl: '/R15E/images/partners/partner_minor/tec.png' },
-]
-
+import partners from '../partnersData.json';
 ---
 
 <Layout title="ACM R15E - Partners">
@@ -55,12 +13,12 @@ const minorPartners = [
                 without these partner companies and organizations!</p>
         </Title>
         <div class="flex flex-col gap-12 2xl:w-2/3">
-            <PartnersSponsor title="Gold Sponsors" partners={goldSponsors} titleClass="text-sponsorGold" />
-            <PartnersSponsor title="Silver Sponsor" partners={silverSponsors} titleClass="text-sponsorSilver" />
-            <PartnersSponsor title="Bronze Sponsors" partners={bronzeSponsors} titleClass="text-sponsorBronze" />
-            <PartnersSponsor title="Media Partners" partners={media} titleClass="text-sponsorPartners" />
-            <PartnersSponsor title="Major Partners" partners={majorPartners} titleClass="text-sponsorPartners" />
-            <PartnersSponsor title="Minor Partners" partners={minorPartners} titleClass="text-sponsorPartners" />
+            <PartnersSponsor title="Gold Sponsors" partners={partners.goldSponsors} titleClass="text-sponsorGold" />
+            <PartnersSponsor title="Silver Sponsor" partners={partners.silverSponsors} titleClass="text-sponsorSilver" />
+            <PartnersSponsor title="Bronze Sponsors" partners={partners.bronzeSponsors} titleClass="text-sponsorBronze" />
+            <PartnersSponsor title="Media Partners" partners={partners.media} titleClass="text-sponsorPartners" />
+            <PartnersSponsor title="Major Partners" partners={partners.majorPartners} titleClass="text-sponsorPartners" />
+            <PartnersSponsor title="Minor Partners" partners={partners.minorPartners} titleClass="text-sponsorPartners" />
         </div>
     </section>
 </Layout>
