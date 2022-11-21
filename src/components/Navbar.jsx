@@ -14,11 +14,12 @@ function Navbar({ baseUrl }) {
   ];
 
   const links = [
-    { text: 'Home', url: baseUrl },
+    // { text: 'Home', url: baseUrl },
     { text: 'Events', url: `${baseUrl}events`, dropdowns: eventsDropdowns },
+    { text: 'Article', url: `${baseUrl}article` },
     { text: 'FAQ', url: `${baseUrl}faq` },
     { text: 'Partners', url: `${baseUrl}partners` },
-    { text: 'About Us', url: `${baseUrl}about` },
+    { text: 'About', url: `${baseUrl}about` },
   ];
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -82,7 +83,7 @@ function Navbar({ baseUrl }) {
           </div>
           <div className="flex-1 flex items-center md:justify-between gap-40">
             <div className="flex-shrink-0 flex items-center">
-              <a href={links[0].url}>
+              <a href={baseUrl}>
                 <img
                   className="inline-block h-8 w-auto md:pl-6"
                   src="/R15E/images/fit-acm.png"
@@ -96,7 +97,7 @@ function Navbar({ baseUrl }) {
               </a>
             </div>
             <div className="hidden sm:block">
-              <div className="flex space-x-4">
+              <div className="flex items-center space-x-2">
                 {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" --> */}
                 {links.map((link) => (
                   <React.Fragment key={link.url}>
@@ -120,12 +121,6 @@ function Navbar({ baseUrl }) {
                 ))}
               </div>
             </div>
-            <a
-              href="https://bit.ly/ACMR15E"
-              className="bg-gradient-to-r from-riseLightGold to-riseDarkGold text-white rounded-full py-1 px-3 hidden sm:block"
-            >
-              Register
-            </a>
           </div>
         </div>
       </div>
